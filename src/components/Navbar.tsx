@@ -47,11 +47,9 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div
-                    className={`md:hidden transition-all duration-300 ease-in-out 
+                <div className={`md:hidden transition-all duration-300 ease-in-out 
                         ${isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'} 
-                        overflow-hidden`}
-                    >
+                        overflow-hidden`}>
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         {navItems.map((item) => (
                         <Link
