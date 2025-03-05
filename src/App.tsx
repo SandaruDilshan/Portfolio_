@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar.tsx"
 import About from "./components/About.tsx"
+import Experience from "./components/Experience.tsx"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <main className="pt-16">
         <About />
+        <Experience />
       </main>
     </div>
   )

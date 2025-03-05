@@ -1,5 +1,9 @@
+import "../index.css"; 
 import Images from '../assets/images/images.tsx'
-import {Code2, Grid2x2Check, MonitorSmartphone  } from 'lucide-react'
+import { Code2, Grid2x2Check, MonitorSmartphone } from 'lucide-react'
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { SiMedium } from "react-icons/si";
+import { TbBrandGmail } from "react-icons/tb";
 
 const About = () => {
     return (
@@ -10,7 +14,9 @@ const About = () => {
                         <img className='border-transparent' src={Images.Profile_pic}  alt="Profile picture" />
                     </div>
                     <div className="md:w-1/2">
-                        <h1 className="text-4xl text-white font-bold mb-6">Hello, I'm Sandaru Dilshan</h1>
+                        <h1 className="text-4xl text-white font-bold mb-6">Hello, I'm Sandaru Dilshan
+                            <span className='inline-block animate-rotate-in'>🖐️</span>
+                        </h1>
                         <h2 className="text-2xl text-indigo-400 mb-4"><pre>Software Engineer</pre></h2>
                         <p className="text-gray-300 mb-5">
                             <i>
@@ -30,7 +36,7 @@ const About = () => {
                                 </span>
                             </i>
                         </p>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-2 gap-4 mb-10">
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Code2 className='text-indigo-400' />
                                 <span>Full Stack Developer</span>
@@ -47,6 +53,21 @@ const About = () => {
                                 <MonitorSmartphone  className='text-indigo-400' />
                                 <span>Moblie Application Development</span>
                             </div>
+                        </div>
+                        <div className="flex justify-start gap-5">
+                            <a href="https://www.linkedin.com/in/sandarudev20"
+                                className="inline-block transition-transform duration-300 hover:scale-125">
+                                <FaLinkedin className='bg-blue-500 h-8 w-8 ' />
+                            </a>
+                            <a href="https://github.com/SandaruDilshan"
+                                className="inline-block transition-transform duration-300 hover:scale-125">
+                                <FaGithubSquare className='bg-purple-500 h-8 w-8 ' />
+                            </a>
+                            <a href="https://medium.com/@jsandarudilshan"
+                                className="inline-block transition-transform duration-300 hover:scale-125">
+                                <SiMedium className='bg-white w-8 h-8 border-1 border-white' />
+                            </a>
+                            <TbBrandGmail className="w-8 h-8 text-red-500 border-white border-2 transition-transform duration-300 hover:scale-125"/>
                         </div>
                     </div>
                 </div>
