@@ -19,6 +19,8 @@ import { SiPostman } from "react-icons/si";
 import { FaBrain } from "react-icons/fa";
 import { FiLayout } from "react-icons/fi";
 import { FaTools } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
+
 
 
 const TechStack = [
@@ -27,6 +29,7 @@ const TechStack = [
         skills: [
             { name: "React.js", icon: <FaReact className="w-4 h-4 text-blue-500" /> },
             { name: "Next.js", icon: <RiNextjsFill className="w-4 h-4 text-white" /> },
+            { name: "React Native", icon: <TbBrandReactNative className="w-4 h-4 text-blue-300" /> },
             { name: "JavaScript", icon: <IoLogoJavascript className="w-4 h-4 text-yellow-400" /> },
             { name: "TypeScript", icon: <SiTypescript  className="w-4 h-4 text-blue-500 bg-white" /> },
             { name: "HTML", icon: <FaHtml5 className="w-4 h-4 text-orange-500 " /> },
