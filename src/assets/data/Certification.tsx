@@ -10,6 +10,7 @@ import IntroductiontoPromt from "../images/certificate/Introduce_to_promt_ engin
 import DSA_javascript from "../images/certificate/DSA_Javascript.jpg"
 import Github from "../images/certificate/Sandaru Dilshan_page-0001.jpg"
 import Azuer from "../images/certificate/Azuer Fundamentals.png"
+import CodePulse from "../images/certificate/CodePulse.jpeg"
 
 const Certifications = [
     
@@ -87,4 +88,13 @@ const Certifications = [
     }
 ];
 
-export default Certifications;
+const Compititions = [
+    {
+        title: "Code Pulse",
+        image: CodePulse,
+        description: "Winner of the Code Pulse competition.",
+        date: "2024",
+    }
+];
+
+export { Certifications, Compititions };

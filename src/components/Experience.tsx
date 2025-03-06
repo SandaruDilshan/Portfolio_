@@ -1,5 +1,5 @@
 import TechStack from "../assets/data/Teckhstack.tsx";
-import Certifications from "../assets/data/Certification.tsx";
+import {Certifications, Compititions} from "../assets/data/Certification.tsx";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 
@@ -30,7 +30,7 @@ const Experience = () => {
                         ))}
                     </div>
                 </div>
-                <div>
+                <div className="mb-16">
                     <h3 className="text-3xl font-semibold text-white mb-12">Certifications</h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {Certifications.map((certificate) => (
@@ -41,8 +41,25 @@ const Experience = () => {
                                     <p className="text-gray-400 ">{certificate.description}</p>
                                     <div className="flex flex-wrap justify-between items-center">
                                         <p className="text-gray-400">{certificate.date}</p>
-                                        <FaExternalLinkSquareAlt className="text-white rounded-2xl"/>
+                                        <a href="" className="inline-block transition-transform duration-300 hover:scale-125">
+                                            <FaExternalLinkSquareAlt className="text-white rounded-2xl" />
+                                        </a>
                                     </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div> 
+                <div>
+                    <h3 className="text-3xl font-semibold text-white mb-12">Compititions</h3>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {Compititions.map((competition) => (
+                            <div key={competition.title} className="bg-black rounded-md border border-gray-500 overflow-hidden">
+                                <img src={competition.image} alt={competition.title} className="w-full h-50 object-cover" />
+                                <div className="p-6">
+                                    <h4 className="text-lg font-semibold mb-2 text-white">{competition.title}</h4>
+                                    <p className="text-gray-400 ">{competition.description}</p>
+                                    <p className="text-gray-400">{competition.date}</p>
                                 </div>
                             </div>
                         ))}
