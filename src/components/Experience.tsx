@@ -40,7 +40,7 @@ const Experience = () => {
                                     <p className="text-gray-400 ">{certificate.description}</p>
                                     <div className="flex flex-wrap justify-between items-center">
                                         <p className="text-gray-400">{certificate.date}</p>
-                                        <a href="" className="inline-block transition-transform duration-300 hover:scale-125">
+                                        <a href={certificate.link} className="inline-block transition-transform duration-300 hover:scale-125">
                                             <FaExternalLinkAlt className="text-white" />
                                         </a>
                                     </div>

@@ -4,6 +4,7 @@ import { Code2, Grid2x2Check, MonitorSmartphone } from 'lucide-react'
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 import { TbBrandGmail } from "react-icons/tb";
+import { Link } from 'react-scroll';
 
 const About = () => {
     return (
@@ -67,7 +68,9 @@ const About = () => {
                                 className="inline-block transition-transform duration-300 hover:scale-125">
                                 <SiMedium className='bg-white w-8 h-8 border-1 border-white' />
                             </a>
-                            <TbBrandGmail className="w-8 h-8 text-red-500 border-white border-2 transition-transform duration-300 hover:scale-125"/>
+                            <Link to="contact_form" smooth={true} duration={1000}>
+                                <TbBrandGmail className="w-8 h-8 text-red-500 border-white border-2 transition-transform duration-300 hover:scale-125"/>
+                            </Link>
                         </div>
                     </div>
                 </div>

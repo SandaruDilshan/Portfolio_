@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar.tsx"
 import About from "./components/About.tsx"
 import Experience from "./components/Experience.tsx"
 import Projects from "./components/Projects.tsx"
+import Contact from "./components/Contact.tsx"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </main>
     </div>
   )
