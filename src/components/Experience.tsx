@@ -1,7 +1,6 @@
 import TechStack from "../assets/data/Teckhstack.tsx";
 import {Certifications, Compititions} from "../assets/data/Certification.tsx";
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Experience = () => {
     return (
@@ -31,7 +30,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="mb-16">
-                    <h3 className="text-3xl font-semibold text-white mb-12">Certifications</h3>
+                    <h3 className="text-2xl font-semibold text-white mb-12">Certifications</h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {Certifications.map((certificate) => (
                             <div key={certificate.title} className="bg-black rounded-md border border-gray-500 overflow-hidden">
@@ -42,7 +41,7 @@ const Experience = () => {
                                     <div className="flex flex-wrap justify-between items-center">
                                         <p className="text-gray-400">{certificate.date}</p>
                                         <a href="" className="inline-block transition-transform duration-300 hover:scale-125">
-                                            <FaExternalLinkSquareAlt className="text-white rounded-2xl" />
+                                            <FaExternalLinkAlt className="text-white" />
                                         </a>
                                     </div>
                                 </div>
@@ -51,7 +50,7 @@ const Experience = () => {
                     </div>
                 </div> 
                 <div>
-                    <h3 className="text-3xl font-semibold text-white mb-12">Compititions</h3>
+                    <h3 className="text-2xl font-semibold text-white mb-12">Compititions</h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {Compititions.map((competition) => (
                             <div key={competition.title} className="bg-black rounded-md border border-gray-500 overflow-hidden">

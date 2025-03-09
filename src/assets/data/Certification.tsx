@@ -75,7 +75,7 @@ const Certifications = [
         date: "2024",
     },
     {
-        title: "GitHub Campus Expert",
+        title: "Version Controling with Github",
         image: Github,
         description: "GitHub Campus Expert is a certification program that recognizes students who have demonstrated proficiency in using GitHub.",
         date: "2024",
