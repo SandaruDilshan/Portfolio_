@@ -1,7 +1,8 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
 import Swal from "sweetalert2";
+
 
 const Contact = () => {
 
@@ -14,8 +15,8 @@ const Contact = () => {
         if (!form.current) return;  // Ensure form exists before sending email
 
         emailjs
-            .sendForm('service_0vj2873', 'template_0butnqi', form.current, {
-                publicKey: 'zXEZLjPo6d9QJMs6A',
+            .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+                publicKey: import.meta.env.VITE_PUBLIC_KEY,
             })
             .then(
                 () => {
