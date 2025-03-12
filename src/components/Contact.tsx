@@ -80,21 +80,21 @@ const Contact = () => {
                         <form id='contact_form' ref={form} onSubmit={sendEmail} className="space-y-4">
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-1"> Name </label>
-                                <input type="text"
+                                <input type="text" required
                                     name="user_name"
                                     className="w-full px-4 py-2 bg-black border border-gray-800 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white"
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-1"> Email  </label>
-                                <input type="email"
+                                <input type="email" required
                                     name="user_email"
                                     className="w-full px-4 py-2 bg-black border border-gray-800 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white"
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-1"> Message </label>
-                                <textarea rows={4}
+                                <textarea rows={4} required
                                     name="message"
                                     className="w-full px-4 py-2 bg-black border border-gray-800 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white">
                                 </textarea>
