@@ -1,6 +1,8 @@
 import { Link } from 'react-scroll';
 import { User, Briefcase, FolderGit2, Mail, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'framer-motion'
+import {useScrollDirection} from '../hooks/useCurrentDirection.tsx'
 
 const Navbar = () => {
 
@@ -13,8 +15,14 @@ const Navbar = () => {
         { title: 'Buy me a coffee', icon: <Mail size={20} />, to: 'contact'}
     ]
 
+    const scrollDirection = useScrollDirection();
+    const shouldAnimate = scrollDirection === 'down';
     return (
-        <nav className="fixed w-full bg-black/80  backdrop-blur-sm z-50 border-b border-gray-800">
+        <motion.nav
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{duration: shouldAnimate ? 0.75 : 0}}
+            className="fixed w-full bg-black/80  backdrop-blur-sm z-50 border-b border-gray-800">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <div className="text-xl font-bold text-indigo-400">@sandarudev.</div>
@@ -67,7 +75,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </nav>
+        </motion.nav>
     );
 };
 
