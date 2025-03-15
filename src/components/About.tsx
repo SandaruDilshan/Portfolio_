@@ -23,7 +23,7 @@ const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: shouldAnimate ? 0.75 : 0 }}
                     >
-                        <div className=' max-sm:rounded-full max-sm:overflow-hidden max-sm:relative max-sm:h-75 max-sm:w-100 '>
+                        <div className='max-sm:rounded-full max-sm:overflow-hidden max-sm:relative max-sm:h-75 max-sm:w-100 '>
                             <img className='border-transparent max-sm:absolute' src={Images.Profile_pic} alt="Profile picture" />
                         </div>
                     </motion.div>
