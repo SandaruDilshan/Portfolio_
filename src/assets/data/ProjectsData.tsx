@@ -1,6 +1,6 @@
 import Amazon_colne from "../images/projects/Amazon_colne.png";
 import Library from "../images/projects/Library.png";
-import FunChat from "../images/projects/FunChat.png";
+import FunChat from "../images/projects/Funchat.png";
 
 const projects = [
   {
